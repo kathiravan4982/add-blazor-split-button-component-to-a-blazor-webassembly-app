@@ -21,44 +21,46 @@ This sample demonstrates how to add and configure the Syncfusion [Blazor Split B
 
 **Visual Studio 2022**
 
-1. Open the solution file:
+1. Clone or download this repository.
+2. Open the solution file:
 
    `AddingSplitButtonComponent.sln`
 
-2. Restore the NuGet packages by rebuilding the solution.
-3. Set the startup project to:
+3. Restore the NuGet packages by rebuilding the solution.
+4. Set the startup project to:
 
    `AddingSplitButtonComponent.Server`
 
-4. Build the solution.
-5. Run the application using `Ctrl+F5`.
-6. Open the application URL displayed by Visual Studio after launch.
-7. Verify that the Split Button displays the Paste action with its configured icon.
+5. Build the solution.
+6. Run the application using `Ctrl+F5`.
+7. Open the application URL displayed by Visual Studio after launch.
+8. Verify that the Split Button displays the Paste action with its configured icon.
 
 **Visual Studio Code**
 
-1. Open the repository folder in Visual Studio Code.
-2. Open the integrated terminal.
-3. Navigate to the server project directory:
+1. Clone or download this repository.
+2. Open the repository folder in Visual Studio Code.
+3. Open the integrated terminal.
+4. Navigate to the server project directory:
 
 ```bash
 cd Server
 ```
 
-4. Restore the NuGet packages:
+5. Restore the NuGet packages:
 
 ```bash
 dotnet restore
 ```
 
-5. Run the project:
+6. Run the project:
 
 ```bash
 dotnet run
 ```
 
-6. Open the local URL displayed in the terminal after the application starts.
-7. Verify that the Split Button displays the Paste action with its configured icon.
+7. Open the local URL displayed in the terminal after the application starts.
+8. Verify that the Split Button displays the Paste action with its configured icon.
 
 ## Support and Feedback
 
