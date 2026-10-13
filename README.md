@@ -1,67 +1,72 @@
 # How to Add the Syncfusion Blazor Split Button to a Blazor WebAssembly App
 
-The [Blazor Split Button](https://www.syncfusion.com/blazor-components/blazor-split-button?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples) triggers a default action when the primary button is clicked and provides a list of actions when the drop-down button is clicked. This project also includes a code snippet to add icons and change their positions, display the split button items horizontally, bind a click event to the component.
+## Overview
+
+This sample demonstrates how to add and configure the Syncfusion [Blazor Split Button](https://www.syncfusion.com/blazor-components/blazor-split-button) in a hosted Blazor WebAssembly application. It displays a Paste action with a custom icon and provides a drop-down menu containing related paste options. The sample also demonstrates horizontal menu-item presentation, disabled states, and opening-event handling.
+
+## Key Features
+
+- Displays the Syncfusion Blazor `SfSplitButton` component with Paste as its primary action.
+- Adds a custom Paste icon and positions it to the left of the button text using `IconCss` and `IconPosition`.
+- Defines related paste actions through `DropDownMenuItems` and presents the menu items horizontally using custom styling.
+- Handles the `OnOpen` event to toggle the disabled state of the `Paste as Special` menu item.
+- Configures the Split Button as disabled using the `Disabled` property.
 
 ## Prerequisites
 
-* Visual Studio 2022
+- Visual Studio 2022 or Visual Studio Code
+- .NET SDK compatible with the project's target framework
 
 ## How to run the project
 
-* Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
-* Run the project.
+**Visual Studio 2022**
 
-## Features and benefits
+1. Open the solution file:
 
-## Split Button size
+   `AddingSplitButtonComponent.sln`
 
-You can make use of different split button sizes, default and small.
+2. Restore the NuGet packages by rebuilding the solution.
+3. Set the startup project to:
 
-## Menu items with icons
+   `AddingSplitButtonComponent.Server`
 
-Users tend to perceive visual information better than text. The Blazor Split Button has built-in options to include an icon to the left or above the text or provide an icon-only button.
+4. Build the solution.
+5. Run the application using `Ctrl+F5`.
+6. Open the application URL displayed by Visual Studio after launch.
+7. Verify that the Split Button displays the Paste action with its configured icon.
 
-## Pop-up menu
+**Visual Studio Code**
 
-The pop-up is a toggleable container that holds a list of action items or custom content that will open or close when the button is clicked. You can customize all the items in a pop-up.
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the server project directory:
 
-## Menu divider and separator
+```bash
+cd Server
+```
 
-You can use a horizontal line separator to represent similar action items as a group within the list of available items.
+4. Restore the NuGet packages:
 
-## Related links
-[Learn More about Blazor Split Button](https://www.syncfusion.com/blazor-components/blazor-split-button?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+```bash
+dotnet restore
+```
 
-[Download Free Trial](https://www.syncfusion.com/downloads/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+5. Run the project:
 
-[Pricing](https://www.syncfusion.com/sales/products/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+```bash
+dotnet run
+```
 
-[Documentation](https://blazor.syncfusion.com/documentation/split-button/getting-started?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+6. Open the local URL displayed in the terminal after the application starts.
+7. Verify that the Split Button displays the Paste action with its configured icon.
 
-[View Demos](https://github.com/SyncfusionExamples/add-blazor-split-button-component-to-a-blazor-webassembly-app.git?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+## Support and Feedback
 
-[Community Forums](https://www.syncfusion.com/forums/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Official documentation: [Blazor Split Button getting started documentation](https://blazor.syncfusion.com/documentation/split-button/getting-started)
 
-[Suggest a feature or report a bug](https://www.syncfusion.com/feedback/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
+## License
 
-[Online examples](https://blazor.syncfusion.com/demos/buttons/progress-button?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
-
-[Knowledge Base](https://www.syncfusion.com/kb/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)
-
-### About Syncfusion Blazor Components
-The Syncfusion's [Blazor components](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples) library offers over 70 UI components to work with Blazor server-side and client-side (Blazor WebAssembly) projects seamlessly. In addition to Split Button, we provide popular Blazor Components such as [DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Charts](https://www.syncfusion.com/blazor-components/blazor-charts?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Diagram](https://www.syncfusion.com/blazor-components/blazor-diagram?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), and [Word Processor](https://www.syncfusion.com/blazor-components/blazor-word-processor?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples).
-
-### About Syncfusion
-
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 28,000 customers and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
- 
-Today, we provide 1700+ components and frameworks for web ([Blazor](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-webforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [React](https://www.syncfusion.com/react-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Vue](https://www.syncfusion.com/vue-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)), mobile ([Xamarin](https://www.syncfusion.com/xamarin-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)), and desktop development ([WinForms](https://www.syncfusion.com/winforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [WPF](https://www.syncfusion.com/wpf-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [WinUI](https://www.syncfusion.com/winui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples)). We provide ready-to-deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
-
-<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
-
-<p align="center">
-<a href="mailto:sales@syncfusion.com?Subject=Syncfusion Blazor Split Button - GitHub" target="_top">sales@syncfusion.com</a> | <a href="https://www.syncfusion.com?utm_source=github&utm_medium=listing&utm_campaign=blazor-split-buttons-github-samples">www.syncfusion.com</a> | Toll Free: 1-888-9 DOTNET <br>
-</p>
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
 
